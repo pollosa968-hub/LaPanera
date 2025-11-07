@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Eliminar Registro</title>
+  <link rel="icon" href="Logo.ico">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Eliminar</h1>
+    </header>
+    <section class="form-section">
+      <h2>Eliminar registro</h2>
+      <form action="../php/eliminarfor.php" method="POST" class="delete-form">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="usuario@ejemplo.com" required maxlength="100">
+
+        <button type="submit" name="Eliminar">Eliminar</button>
+      </form>
+      <a href="../html/productos.html" class="back-btn">↩ Regresar al formulario</a>
+    </section>
+  </div>
+  <?php include_once("eliminarregistros.php"); ?>
+</body>
+</html>

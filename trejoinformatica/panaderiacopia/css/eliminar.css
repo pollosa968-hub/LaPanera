@@ -1,0 +1,68 @@
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #e0f7fa; /* azul claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Caja del formulario */
+.container {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Título */
+header h1 {
+  color: #00796b; /* verde azulado */
+  margin-bottom: 16px;
+}
+
+/* Subtítulo */
+.form-section h2 {
+  color: #004d40; /* verde más oscuro */
+  margin-bottom: 12px;
+}
+
+/* Input */
+.delete-form input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #00796b;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Botón eliminar */
+.delete-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  background: #d32f2f; /* rojo brillante */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.delete-form button:hover {
+  background: #b71c1c; /* rojo más oscuro */
+}
+
+/* Botón de regreso */
+.back-btn {
+  display: block;
+  margin: 16px auto 0;
+  padding: 8px 16px;
+  background: #00796b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.back-btn:hover {
+  background: #004d40;
+}

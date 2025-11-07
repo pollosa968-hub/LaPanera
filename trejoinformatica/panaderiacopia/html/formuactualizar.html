@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actualizar Compras</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="icon" href="./Logo.ico">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Actualizar Compras</h2>
+    <form method="POST" action="../php/actualizarfor.php">
+      <section id="productos">
+        <h1>Nuestros Productos</h1>
+        <p>Ofrecemos una amplia variedad de panes dulces y salados, pasteles y repostería fina.</p>
+        <div class="productos">
+            <div class="producto">
+                <img src="../imagenes/pandulce.jpg">
+                <h2>Pan dulce</h2>
+                <p>Conchas, donas, borrachos y más. Hechos diariamente con masa madre.</p>
+                <p>COSTO $11.50 LA PIEZA</p>
+                <label for="cantidad-pandulce">Cantidad:</label>
+                <input type="number" id="cantidad-pandulce" name="cantidad-pandulce" min="0" value="0">
+            </div>
+            <div class="producto">
+                <img src="../imagenes/tele.jpg">
+                <h2>Teleras</h2>
+                <p>Hechos diariamente con masa madre.</p>
+                <p>COSTO $2.50 LA PIEZA</p>
+                <label for="cantidad-teleras">Cantidad:</label>
+                <input type="number" id="cantidad-teleras" name="cantidad-teleras" min="0" value="0">
+            </div>
+            <div class="producto">
+                <img src="../imagenes/boli.jpg">
+                <h2>Bolillos</h2>
+                <p>Hechos diariamente con masa madre.</p>
+                <p>COSTO $4.50 LA PIEZA</p>
+                <label for="cantidad-bolillos">Cantidad:</label>
+                <input type="number" id="cantidad-bolillos" name="cantidad-bolillos" min="0" value="0">
+            </div>
+            <div class="producto">
+                <img src="../imagenes/sina.jpg">
+                <h2>Pan sin azucar</h2>
+                <p>Cuernitos y más. Hechos diariamente con masa madre.</p>
+                <p>COSTO $11.00 LA PIEZA</p>
+                <label for="cantidad-sinazucar">Cantidad:</label>
+                <input type="number" id="cantidad-sinazucar" name="cantidad-sinazucar" min="0" value="0">
+            </div>
+            <div class="producto">
+                <img src="../imagenes/imagen2.jpeg">
+                <h2>Galletas y mas</h2>
+                <p>Pasteles, galletas y postres para ocasiones especiales.</p>
+                <p>COSTO $19.00 LA PIEZA</p>
+                <label for="cantidad-galletas">Cantidad:</label>
+                <input type="number" id="cantidad-galletas" name="cantidad-galletas" min="0" value="0">
+            </div>
+            <div class="producto">
+                <img src="../imagenes/inte.jpg">
+                <h2>Línea Saludable</h2>
+                <p>Pan integral, de centeno y opciones bajas en azúcar.</p>
+                <p>COSTO $17.50 LA PIEZA</p>
+                <label for="cantidad-saludable">Cantidad:</label>
+                <input type="number" id="cantidad-saludable" name="cantidad-saludable" min="0" value="0">
+            </div>
+    </section>
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" name="correo" id="correo" required>
+      <button type="submit">Actualizar</button>
+    </form>
+  </div>
+</body>
+</html>

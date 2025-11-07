@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA PANERA</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" href="../pann.png">
+</head>
+<main>
+<body>
+    <noscript>
+        <p>La pagina que estas viendo requiere para su funcionamiento el uso de javascripts.</p>
+    </noscript>
+    <header>
+        <h1>LA PANERA</h1>
+        <nav>
+            <ul>
+                <li><a href="ubicasion.html">Ubicación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <button><a href="../html/cuenta.html">Crear cuenta</a></button>
+            </ul>
+        </nav>
+    </header>
+    <form action="../php/productos.php" method="POST">
+    <section id="productos">
+        <h1>Nuestros Productos</h1>
+        <p>Ofrecemos una amplia variedad de panes dulces y salados, pasteles y repostería fina.</p>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email">
+                <span class="error-message" id="error-email"></span>
+            </div>
+        <div class="productos">
+            <div class="producto">
+                <img src="../imagenes/pandulce.jpg">
+                <h2>Pan dulce</h2>
+                <p>Conchas, donas, borrachos y más. Hechos diariamente con masa madre.</p>
+                <p>COSTO $11.50 LA PIEZA</p>
+                <label for="cantidad-pandulce">Cantidad:</label>
+                <input type="number" id="cantidad-pandulce" name="cantidad-pandulce" min="0" value="0">
+            </div>
+            <div class="producto">
+                <img src="../imagenes/tele.jpg">
+                <h2>Teleras</h2>
+                <p>Hechos diariamente con masa madre.</p>
+                <p>COSTO $2.50 LA PIEZA</p>
+                <label for="cantidad-teleras">Cantidad:</label>
+                <input type="number" id="cantidad-teleras" name="cantidad-teleras" min="0" value="0">
+            </div>
+            <div class="producto">
+                <img src="../imagenes/boli.jpg">
+                <h2>Bolillos</h2>
+                <p>Hechos diariamente con masa madre.</p>
+                <p>COSTO $4.50 LA PIEZA</p>
+                <label for="cantidad-bolillos">Cantidad:</label>
+                <input type="number" id="cantidad-bolillos" name="cantidad-bolillos" min="0" value="0">
+            </div>
+            <div class="producto">
+                <img src="../imagenes/sina.jpg">
+                <h2>Pan sin azucar</h2>
+                <p>Cuernitos y más. Hechos diariamente con masa madre.</p>
+                <p>COSTO $11.00 LA PIEZA</p>
+                <label for="cantidad-sinazucar">Cantidad:</label>
+                <input type="number" id="cantidad-sinazucar" name="cantidad-sinazucar" min="0" value="0">
+            </div>
+            <div class="producto">
+                <img src="../imagenes/imagen2.jpeg">
+                <h2>Galletas y mas</h2>
+                <p>Pasteles, galletas y postres para ocasiones especiales.</p>
+                <p>COSTO $19.00 LA PIEZA</p>
+                <label for="cantidad-galletas">Cantidad:</label>
+                <input type="number" id="cantidad-galletas" name="cantidad-galletas" min="0" value="0">
+            </div>
+            <div class="producto">
+                <img src="../imagenes/inte.jpg">
+                <h2>Línea Saludable</h2>
+                <p>Pan integral, de centeno y opciones bajas en azúcar.</p>
+                <p>COSTO $17.50 LA PIEZA</p>
+                <label for="cantidad-saludable">Cantidad:</label>
+                <input type="number" id="cantidad-saludable" name="cantidad-saludable" min="0" value="0">
+            </div>
+             <div class="botones-acciones">
+            <button type="button" class="btn-consultar"><a href=formuconsulta.html>Consultar</a></button>
+            <button type="button" class="btn-actualizar"><a href=formuactualizar.html>Actualizar</a></button>
+            <button type="button" class="btn-eliminar"><a href=eliminaregis.html>Eliminar</a></button>
+        </div> <br>
+             </div>
+        <div class="form-submit">
+            <button type="submit">Enviar Pedido</button>
+        </div>
+        </form>
+        <button><a href="../index.php">Volver al inicio</a></button>
+    </section>
+</main>
+    <footer>
+        LA PANERA - Desde 1985<br>
+        Equipo:<br>
+        Flores Castañeda Valeria<br>
+        Édgar Fernando Trejo Ibarra<br>
+        Aguilar Rosas Melanie Samaris<br>
+    </footer>
+</body>
+</html>
